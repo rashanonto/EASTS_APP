@@ -1,42 +1,33 @@
 package com.dynamicobjx.visitorapp.activities;
 
-        import java.util.Arrays;
-        import java.util.LinkedList;
-        import java.util.List;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
-        import android.app.AlertDialog;
-        import android.content.Context;
-        import android.content.DialogInterface;
-        import android.content.DialogInterface.OnMultiChoiceClickListener;
-        import android.util.AttributeSet;
-        import android.util.Log;
-        import android.widget.ArrayAdapter;
-        import android.widget.EditText;
-        import android.widget.Spinner;
-        import android.widget.SpinnerAdapter;
-        import android.widget.Toast;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnMultiChoiceClickListener;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
+import android.widget.Toast;
 
-        import com.dynamicobjx.visitorapp.helpers.ParseHelper;
-        import com.dynamicobjx.visitorapp.models.Visitor;
-        import com.parse.Parse;
-        import com.parse.ParseObject;
+import com.dynamicobjx.visitorapp.helpers.ParseHelper;
+import com.dynamicobjx.visitorapp.models.Visitor;
+import com.parse.Parse;
+import com.parse.ParseObject;
 
 public class MultiSelect extends Spinner implements  OnMultiChoiceClickListener {
 
-    private final static String APP_ID = "9OnZOXGKZN23tQcmHvAPIKBPGQrYZYhIKdm3WIUa";
-    private final static String CLIENT_KEY = "QiGQfF3C7yb3zTH8SmoQi299rzXeJ9TQ7wAolPe4";
-
-    ParseHelper parseHelper;
     String[] _items = null;
     boolean[] mSelection = null;
     ArrayAdapter<String> simple_adapter;
     Visitor visitor;
     String value;
-
-    public void initParse(Context context) {
-        Parse.initialize(context, APP_ID, CLIENT_KEY);
-        Log.d("parse","parse successfully initialized!");
-    }
 
     public MultiSelect(Context context) {
         super(context);
@@ -54,10 +45,7 @@ public class MultiSelect extends Spinner implements  OnMultiChoiceClickListener 
     }
 
     public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-
         ParseObject.registerSubclass(Visitor.class);
-        //parseHelper = new ParseHelper();
-        initParse(getContext());
         if (mSelection != null && which < mSelection.length) {
             mSelection[which] = isChecked;
             Log.d("Selct index",""+which);
@@ -241,10 +229,6 @@ public class MultiSelect extends Spinner implements  OnMultiChoiceClickListener 
         }
         return sb.toString();
     }
-
-
-
-
 }
 
 

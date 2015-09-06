@@ -5,7 +5,7 @@ android {
     buildToolsVersion '23.0.0'
     defaultConfig {
         applicationId "com.dgsi.visitorapp.easts2015"
-        minSdkVersion 10
+        minSdkVersion 14
         targetSdkVersion 23
         versionCode 6
         versionName "1.3.2"

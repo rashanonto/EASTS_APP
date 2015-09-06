@@ -1,6 +1,7 @@
 package com.dynamicobjx.visitorapp.activities;
 
 import android.app.Application;
+import android.util.Log;
 
 import com.dynamicobjx.visitorapp.R;
 import com.parse.Parse;
@@ -18,5 +19,6 @@ public class BaseApplication extends Application {
         Parse.enableLocalDatastore(this);
         Parse.initialize(this, getResources().getString(R.string.parid),
                 getResources().getString(R.string.parkey));
+        Log.d("parse", "parse successfully initialized!");
     }
 }
