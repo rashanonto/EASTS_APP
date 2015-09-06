@@ -47,8 +47,6 @@ public class LoginActivity extends BaseActivity implements OnLoginListener {
         parseHelper = new ParseHelper();
         parseHelper.setOnLoginListener(this);
 
-
-
         Bitmap bitmap = trimDownImgReso(getResources(), R.drawable.logo, 1000, 1000);
         Drawable drawable = new BitmapDrawable(getResources(),bitmap);
         ivLogo.setImageDrawable(drawable);

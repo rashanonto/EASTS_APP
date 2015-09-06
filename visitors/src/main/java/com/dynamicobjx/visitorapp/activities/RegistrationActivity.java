@@ -123,7 +123,6 @@ public class RegistrationActivity extends BaseActivity implements AdapterView.On
         setGroupFont(llInfoLayout,getTfSegoe());
         parseHelper = new ParseHelper();
 
-
         list1.add("18-30");
         list1.add("31-40");
         list1.add("41-50");
@@ -398,6 +397,5 @@ public class RegistrationActivity extends BaseActivity implements AdapterView.On
             }
         });
         Log.d("done", "registered");
-
     }
 }

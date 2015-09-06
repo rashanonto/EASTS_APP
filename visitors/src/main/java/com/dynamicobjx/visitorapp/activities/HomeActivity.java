@@ -39,15 +39,10 @@ import butterknife.OnClick;
  */
 public class HomeActivity extends BaseActivity implements View.OnClickListener {
 
-
     @InjectView(R.id.ivLogo) ImageView ivLogo;
     @InjectView(R.id.tvEvDate) TextView tvEvDate;
-
     private static Bitmap bitmap;
     private Exhibitor exhibitor;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +50,6 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         setContentView(R.layout.activity_home);
         ButterKnife.inject(this);
         initActionBar();
-
 
         getllQrScanner().setOnClickListener(this);
         getllMyCode().setOnClickListener(this);

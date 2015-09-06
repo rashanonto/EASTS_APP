@@ -129,10 +129,11 @@ public class BaseActivity extends AppCompatActivity {
         actionBar.setCustomView(R.layout.custom_actionbar);
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setDisplayShowHomeEnabled(false);
-        setFont(TF_SEGOE,getTvHeader());
+        setFont(TF_SEGOE, getTvHeader());
         setFont(TF_BOOTSTRAP, getTvBack());
         setFont(TF_BOOTSTRAP, getTvHome());
         getTvHeader().setText(header);
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
         return (LinearLayout)findViewById(R.id.llCustomActioBar);
     }
 
@@ -149,6 +150,7 @@ public class BaseActivity extends AppCompatActivity {
         setFont(TF_BOOTSTRAP, getTvHome());
         setFont(TF_BOOTSTRAP, getTvSearch());
         getTvHeader().setText(header);
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
         return (LinearLayout)findViewById(R.id.llCustomActioBar);
     }
 
@@ -168,6 +170,7 @@ public class BaseActivity extends AppCompatActivity {
         SpinnerAdapter mapAdapter = new SpinnerAdapter(this,itemLayout,maps,getTfSegoe(),Color.WHITE);
         mapAdapter.setDropDownViewResource(dropDownLayout);
         getMapSpinner().setAdapter(mapAdapter);
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
         return (LinearLayout)findViewById(R.id.llCustomActioBar);
     }
 
