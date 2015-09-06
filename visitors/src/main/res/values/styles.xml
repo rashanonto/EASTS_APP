@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+    <style name="edit_text_style">
+        <item name="android:padding">@dimen/registration_margin</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:layout_marginLeft">@dimen/registration_edittext_margin</item>
+        <item name="android:layout_marginRight">@dimen/registration_edittext_margin</item>
+        <!--<item name="android:background">@drawable/edit_text</item>-->
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/font_size</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:layout_marginLeft">@dimen/schedule_title_size</item>
+        <item name="android:layout_marginRight">@dimen/schedule_title_size</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/font_size</item>
+    </style>
+
+
+</resources>

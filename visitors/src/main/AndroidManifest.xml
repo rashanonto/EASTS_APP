@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dynamicobjx.visitorapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".activities.BaseApplication"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+
+            android:screenOrientation="portrait"
+            >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.HomeActivity"
+
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyQRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MediaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".activities.ProductsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.ScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ExhibitorsActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.MyScansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyVisitsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TweetPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NewsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CategoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MapsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FullScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FullVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.ExhibitorDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyVisitsListingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyVisitsCategoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutDynamicGlobalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ScheduleDetailsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".activities.ForgotPasswordActivty"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

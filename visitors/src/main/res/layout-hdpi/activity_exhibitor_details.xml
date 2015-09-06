@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/metro_red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvExhibitorName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/exhibitor_name_size" />
+
+        <ImageView
+            android:id="@+id/Vlogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/exhibitor_name_size" />
+
+        <TextView
+            android:id="@+id/tvFav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/fa_star_empty"
+            android:textColor="@color/metro_yellow"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/locate_on_map"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_margin="2dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tvIconLocate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="10"
+                    android:paddingRight="10dp"
+                    android:text="@string/fa_marker"
+                    android:textSize="@dimen/contact_details_item_size" />
+
+                <TextView
+                    android:id="@+id/tvLocateOnMap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="90"
+                    android:gravity="left"
+                    android:text="@string/floor_map"
+                    android:textSize="@dimen/contact_details_item_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tvIconBoothNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="10"
+                    android:paddingRight="10dp"
+                    android:text="@string/fa_home"
+                    android:textSize="@dimen/contact_details_item_size" />
+
+                <TextView
+                    android:id="@+id/tvBoothNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="90"
+                    android:gravity="left"
+                    android:text="@string/floor_map"
+                    android:textSize="@dimen/contact_details_item_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llCompanyDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/description"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/tvExhibitorDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/contact_details_item_size"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/contact_details"
+                android:textAllCaps="true"
+                android:textSize="20dp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_margin="2dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIconAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/fa_address"
+                    android:textSize="@dimen/contact_details_item_size" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:maxLines="3"
+                    android:textSize="@dimen/contact_details_item_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIconContact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/fa_phone"
+                    android:textSize="@dimen/contact_details_item_size" />
+
+                <LinearLayout
+                    android:id="@+id/llContacts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIconEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/fa_envelope"
+                    android:textSize="@dimen/contact_details_item_size" />
+
+                <LinearLayout
+                    android:id="@+id/llEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIconFax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:paddingRight="10dp"
+                    android:text="@string/fa_print"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/contact_details_item_size" />
+
+                <LinearLayout
+                    android:id="@+id/llFax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIconWebsite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/fa_email"
+                    android:textSize="@dimen/contact_details_item_size" />
+
+                <LinearLayout
+                    android:id="@+id/llWeb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="CONTACT PERSON"
+                android:textAllCaps="true"
+                android:textSize="20dp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_margin="2dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tvContactPerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/contact_details_item_size"
+                android:layout_marginTop="5dp"
+                android:text="lorem ipsum...." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/schedule_events"
+                android:textAllCaps="true"
+                android:textSize="20dp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_margin="2dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tvSchedEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/contact_details_item_size"
+                android:text="lorem ipsum...." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/categories"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llCategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

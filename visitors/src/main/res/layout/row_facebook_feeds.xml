@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFeedMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textSize="@dimen/feed_message_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="@string/posted_by"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/feed_from_size" />
+
+        <TextView
+            android:id="@+id/tvFeedFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textSize="@dimen/feed_from_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDatePosted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/feed_date_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray" />
+
+
+</LinearLayout>

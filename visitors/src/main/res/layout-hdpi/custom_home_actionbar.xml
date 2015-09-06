@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llMyCode"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/clickable_linearlayout"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/qr_code"/>
+
+        <TextView
+            android:id="@+id/tvMyQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="@string/my_code"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llQrScanner"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:background="@drawable/clickable_linearlayout"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/qr_scanner"/>
+
+        <TextView
+            android:id="@+id/tvQRScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="@string/qr_code_scanner"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLogOut"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/clickable_linearlayout"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <TextView
+            android:id="@+id/tvOptionsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/fa_burger"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/optAbout"
+        android:showAsAction="never"
+        android:title= "About Dynamic Global Soft Inc." />
+    <item android:id="@+id/optReview"
+        android:showAsAction="never"
+        android:title= "Write your review" />
+    <item android:id="@+id/optLogout"
+        android:showAsAction="never"
+        android:title= "Log Out" />
+</menu>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvEvDate"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="25sp"
+            android:textColor="@color/action_bar_bg"
+
+            android:text="Sponsored by:"/>
+
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="170dp"
+            android:src="@drawable/smart_logo"
+
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--MY VISIT -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMyVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/clickable_menu"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/fa_visit"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_icon_size" />
+
+                    <TextView
+                        android:id="@+id/tvMenuMyVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="@string/my_visit"
+                        android:textSize="@dimen/menu_size" />
+
+                </LinearLayout>
+
+                <!--INFO-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/clickable_menu"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/fa_info"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_icon_size" />
+
+                    <TextView
+                        android:id="@+id/tvMenuAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="@string/info"
+                        android:textSize="@dimen/menu_size" />
+
+                </LinearLayout>
+
+                <!--PRODUCTS-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/clickable_menu"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/fa_product"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_icon_size" />
+
+                    <TextView
+                        android:id="@+id/tvMenuProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="@string/cat"
+                        android:textSize="@dimen/menu_size" />
+
+                </LinearLayout>
+
+                <!--EXHIBITORS-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvExhibitors"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/clickable_menu"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/fa_exhibitors"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_icon_size" />
+
+                    <TextView
+                        android:id="@+id/tvMenuExhibit"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="@string/exhibitors"
+                        android:textSize="@dimen/menu_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--MY VISIT -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/clickable_menu"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/fa_schedule"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_icon_size" />
+
+                    <TextView
+                        android:id="@+id/tvMenuSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="@string/schedule"
+                        android:textSize="@dimen/menu_size" />
+
+                </LinearLayout>
+
+                <!--INFO-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/clickable_menu"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/fa_map"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_icon_size" />
+
+                    <TextView
+                        android:id="@+id/tvMenuMaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="@string/maps"
+                        android:textSize="@dimen/menu_size" />
+
+                </LinearLayout>
+
+                <!--NEWS-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/clickable_menu"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/fa_news"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_icon_size" />
+
+                    <TextView
+                        android:id="@+id/tvMenuNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="@string/News"
+                        android:textSize="@dimen/menu_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvReg"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/clickable_menu"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/fa_media"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_icon_size" />
+
+                    <TextView
+                        android:id="@+id/tvMenuReg"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="@string/media"
+                        android:textSize="@dimen/menu_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

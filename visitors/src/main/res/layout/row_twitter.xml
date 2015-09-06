@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTwitterName"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/twitter_name"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTwitterBody"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/twitter_body"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTwitterTime"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/twitter_body"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

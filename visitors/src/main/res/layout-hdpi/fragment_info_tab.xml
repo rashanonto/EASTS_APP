@@ -1,0 +1,297 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.dynamicobjx.visitorapp.fragments.InfoTabFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:gravity="right"
+                    android:text="@string/hint_country"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/etCountry"
+                    style="@style/edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/registration_margin"
+                    android:layout_weight="65"
+                    android:inputType="textPostalAddress"
+                    android:hint="@string/hint_required"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:gravity="right"
+                    android:text="@string/hint_zip"/>
+
+                <EditText
+                    android:id="@+id/etZipCode"
+                    style="@style/edit_text_style"
+                    android:layout_width="0dp"
+                    android:inputType="textPostalAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/registration_margin"
+                    android:layout_weight="65"
+                    android:hint="@string/hint_optional"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:gravity="right"
+                    android:text="@string/hint_mobile_number"/>
+
+                <EditText
+                    android:id="@+id/etMobileNumber"
+                    style="@style/edit_text_style"
+                    android:layout_width="0dp"
+                    android:inputType="phone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/registration_margin"
+                    android:layout_weight="65"
+                    android:hint="@string/hint_required"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:gravity="right"
+                    android:text="@string/hint_home_number"/>
+
+                <EditText
+                    android:id="@+id/etHomeNumber"
+                    style="@style/edit_text_style"
+                    android:layout_width="0dp"
+                    android:inputType="phone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/registration_margin"
+                    android:layout_weight="65"
+                    android:hint="@string/hint_optional"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:gravity="right"
+                    android:text="@string/hint_office_number"/>
+
+                <EditText
+                    android:id="@+id/etOfficeNumber"
+                    style="@style/edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/registration_margin"
+                    android:layout_weight="65"
+                    android:inputType="phone"
+                    android:hint="@string/hint_optional"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:gravity="right"
+                    android:text="@string/hint_fax"/>
+
+                <EditText
+                    android:id="@+id/etFax"
+                    style="@style/edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/registration_margin"
+                    android:layout_weight="65"
+                    android:hint="@string/hint_optional"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:text="A. DOMESTIC SOCIETY" />
+
+            <com.dynamicobjx.visitorapp.activities.MultiSelect
+                android:id="@+id/spinner_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_style"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:paddingTop="15dp"
+                android:text="B. ORGANIZATION/UNIVERSITY" />
+
+            <com.dynamicobjx.visitorapp.activities.MultiSelect
+                android:id="@+id/spinner_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_style"
+                android:visibility="gone"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:text="C. MAIN PRODUCT INTEREST" />
+
+
+            <com.dynamicobjx.visitorapp.activities.MultiSelect
+                android:id="@+id/spinner_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                style="@style/spinner_style"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:paddingTop="15dp"
+                android:text="D. PURPOSE OF VISIT" />
+
+
+            <com.dynamicobjx.visitorapp.activities.MultiSelect
+                android:id="@+id/spinner_purpose"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                style="@style/spinner_style"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:paddingTop="15dp"
+                android:text="E. SIZE OF ORGANIZATION" />
+
+            <Spinner
+                android:id="@+id/spinner_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_style"
+                android:visibility="gone"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:text="F. ROLE IN PURCHASING" />
+
+            <com.dynamicobjx.visitorapp.activities.MultiSelect
+                android:id="@+id/spinner_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                style="@style/spinner_style"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:paddingTop="15dp"
+                android:text="G. HOW DID YOU LEARN ABOUT THE EXHIBITION?" />
+
+            <com.dynamicobjx.visitorapp.activities.MultiSelect
+                android:id="@+id/spinner_how_did"
+                android:layout_width="match_parent"
+                style="@style/spinner_style"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="10dp" />
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/login_screen_margin"
+                android:background="@drawable/button_clickable"
+                android:text="@string/btn_submit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/login_button_font_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

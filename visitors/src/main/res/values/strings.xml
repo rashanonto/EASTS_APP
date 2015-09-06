@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EASTS 2015 Conference</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_code">My Code</string>
+    <string name="qr_code_scanner">QR Code Scanner</string>
+    <string name="fa_chevron_left"></string>
+    <string name="parid">tgrxqUH3aPiQMOV7BdRdCQFpFM21iaU2AFw10nCR</string>
+
+    <string name="parkey">yfKEiiAc7nKEMRSc77VCRzGFssQJpEGubyIG6AYy</string>
+    <string name="fa_home"></string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Log In</string>
+
+    <string name="btn_Register">Register</string>
+    <string name="my_visit">My Visit</string>
+    <string name="info">About Us</string>
+    <string name="products">Products</string>
+    <string name="cat">Categories</string>
+    <string name="exhibitors">Exhibitors</string>
+    <string name="schedule">Schedule</string>
+    <string name="media">Downloads</string>
+    <string name="maps">Maps</string>
+    <string name="registration">Registration</string>
+    <string name="logout">Log Out</string>
+    <string name="my_scans">My Scans</string>
+    <string name="News">News</string>
+    <string name="fa_visit"></string>
+    <string name="fa_info"></string>
+    <string name="fa_product"></string>
+    <string name="fa_exhibitors"></string>
+    <string name="fa_schedule"></string>
+    <string name="fa_registration"></string>
+    <string name="fa_map"></string>
+    <string name="fa_scan">&#xf002;</string>
+    <string name="fa_burger">&#xf0c9;</string>
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_media">&#xf144;</string>
+    <string name="fa_news"></string>
+    <string name="fa_logout">&#xf011;</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_required">Required</string>
+    <string name="hint_optional">Optional</string>
+    <string name="hint_lastname">Last Name</string>
+    <string name="btn_next">Next</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_age">Age</string>
+    <string name="label_gender">Gender</string>
+    <string name="hint_company">Company Name</string>
+    <string name="hint_contact">Contact Number</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_position">Position</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_civil">Civil Status</string>
+    <string name="hint_address">Address</string>
+
+    <string name="hint_country">Country</string>
+    <string name="hint_zip">Zip Code </string>
+    <string name="hint_mobile_number">Mobile Number</string>
+    <string name="hint_home_number">Home Number</string>
+    <string name="hint_office_number">Office Number</string>
+    <string name="hint_fax">Organization/University</string>
+    <string name="btn_submit">Submit</string>
+    <string name="no_data_found">No data found!</string>
+    <string name="no_data_msg">You dont have any visits yet!</string>
+    <string name="floor_map">Floor Map</string>
+
+    <!-- array of string for genders -->
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="fa_user_plus"></string>
+    <string name="fa_star_empty">&#xf006;</string>
+    <string name="fa_star_full">&#xf005;</string>
+    <string name="title_activity_exhibitors">ExhibitorsActivity</string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+    <string name="title_activity_exhibitor_details">ExhibitorDetails</string>
+    <string name="fb_app_id">747627658623581</string>
+    <string name="posted_by">Posted By: </string>
+    <string name="locate_on_map">locate on map</string>
+    <string name="description">description</string>
+    <string name="contact_details">contact details</string>
+    <string name="schedule_events">schedule event</string>
+    <string name="categories">categories</string>
+    <string name="fax">Fax</string>
+    <string name="website">Website</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="email">Email</string>
+    <string name="fa_marker">&#xf041;</string>
+    <string name="fa_email">&#xf0ac;</string>
+    <string name="fa_envelope">&#xf003;</string>
+    <string name="fa_print">&#xf02f;</string>
+    <string name="fa_tags">&#xf02c;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_address">&#xf064;</string>
+    <string name="refresh">Refresh</string>
+    <string name="fa_group">&#xf0c0;</string>
+    <string name="fa_cart">&#xf07a;</string>
+    <string name="please_wait">Loading items, Please wait...</string>
+
+    <string name="about_dynamic_global">DYNAMIC GLOBAL SOFT Inc. has acclaimed a turn-key IT implementers and
+            systems integrators handling a long line of services that includes the
+            procurement of IT hardware and software, consultancy services, systems
+            integration and full-scale project management. DYNAMIC GLOBAL SOFT Inc. a
+            product &#038; service provider of Information and Communication Technology,
+            supply and print ID cards, software, networking &#038; communications solutions,
+            web-hosting, and Mobile application development in IOS and Andoid devices.
+            As a solutions partner to industry leading IT companies we have a complement
+            of trained staff in our roster which includes CISCO, DELL, MICROSOFT, IBM,
+            HP and many more.
+    </string>
+
+    <string name="about_info">
+            Company Name: Dynamic Global Soft Inc.\n
+            Address: Unit 1206 12th Floor The Trade and Financial Tower, 7th and 32 Ave.\n
+            BGC, Taguig City\n
+            Contact Number: 02-5049813\n
+            Email Address: info@dynamicglobalsoft.com</string>
+
+</resources>

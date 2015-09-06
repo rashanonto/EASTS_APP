@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutusbg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llNoDataFound"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNoData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_found"
+            android:gravity="center"
+            android:textSize="@dimen/no_data_found_size"/>
+
+        <TextView
+            android:id="@+id/tvNoDataMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_msg"
+            android:gravity="center"
+
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/no_data_msg_size"/>
+
+    </LinearLayout>
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/exhibitorsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </se.emilsjolander.stickylistheaders.StickyListHeadersListView>
+
+    <ListView
+        android:id="@+id/lvSorted"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

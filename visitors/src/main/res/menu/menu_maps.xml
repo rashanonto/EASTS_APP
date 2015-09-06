@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/optMapA"
+        android:showAsAction="never"
+        android:title= "Floor Plan A" />
+    <item android:id="@+id/optMapB"
+        android:showAsAction="never"
+        android:title= "Floor Plan B" />
+    <item android:id="@+id/optMapC"
+        android:showAsAction="never"
+        android:title= "Floor Plan C" />
+<!--    <item android:id="@+id/optMapFull"
+        android:showAsAction="never"
+        android:title= "Full Floor Plan" />-->
+</menu>

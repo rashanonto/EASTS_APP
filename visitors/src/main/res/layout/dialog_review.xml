@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write your review"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etReview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:gravity="start"
+        android:background="@drawable/review_background"
+        android:hint="Write your review here"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Send"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_clickable"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
