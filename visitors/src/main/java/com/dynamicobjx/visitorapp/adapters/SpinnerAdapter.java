@@ -1,6 +1,7 @@
 package com.dynamicobjx.visitorapp.adapters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.util.TypedValue;
 import android.view.View;
@@ -40,8 +41,9 @@ public class SpinnerAdapter extends ArrayAdapter<String> {
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView view = (TextView) super.getView(position, convertView, parent);
         view.setTypeface(tfSegoe);
-        view.setTextSize(TypedValue.COMPLEX_UNIT_SP,18);
+        view.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
         view.setTextColor(textColor);
+        view.setBackgroundColor(Color.BLACK);
         return view;
     }
 

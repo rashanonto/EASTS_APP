@@ -57,6 +57,7 @@
         <Spinner
             android:id="@+id/spiner_map"
             style="@style/spinner_style"
+            android:popupBackground="@android:color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
